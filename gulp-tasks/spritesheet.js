@@ -21,7 +21,7 @@ config					= {
 };
 
 gulp.task('spritesheet', function() {
-  return gulp.src('**/*.svg', {cwd: project.buildSrc + '/_icons'})
+  return gulp.src('**/*.svg', {cwd: project.buildSrc + '/_icons/SVG'})
       .pipe(svgSprite(config))
       .on('error', function(error) {
         console.log('oh no!');
