@@ -1,0 +1,260 @@
+// Artificial grid
+// March 2015
+// This document should not be edited
+
+body {
+	margin: 0 auto;
+	width: 100%;
+}
+
+// a container that spans the width of the browser
+.bleed {
+	margin: auto;
+	width: 100%;
+	-webkit-background-size: 100%;
+	-moz-background-size: 100%;
+  background-size: 100%;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+}
+
+// a simple container for use with packery
+.container {
+	margin: 0 auto;
+}
+
+// a more complicated container for css-only grids
+.flex.container {
+   display: -webkit-flex;
+   display: flex;
+   -webkit-flex-direction: row;
+   flex-direction: row;
+   -webkit-align-items: flex-start;
+   align-items: flex-start;
+	 -webkit-justify-content: center;
+	 justify-content: center;
+	 -webkit-flex-wrap: wrap;
+	 flex-wrap: wrap;
+	 margin: auto;
+	 border: 0;
+}
+
+.flex.container.column {
+  -webkit-flex-direction: column;
+  flex-direction: column;
+	height: 500px;
+}
+
+img {
+	width: 100%;
+	margin-bottom: -2.5px; // where do the two-point-five pixels come from?
+}
+
+// for mobile
+@media only screen and (min-device-width: 320px) {
+	// on mobile, everything scales to a single scrolling column
+
+	.container {
+		width: 100%;
+
+		.col-1, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-10, .col-11, .col-12 {
+			width: 100%;
+		}
+	}
+
+	.flex.container {
+		.col-1, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-10, .col-11, .col-12 {
+			width: 100%;
+		}
+		.left-1, .left-2, .left-3, .left-4, .left-5, .left-6, .left-7, .left-8, .left-9, .left-10, .left-11 {
+			margin-left: 0;
+		}
+		.right-1, .right-2, .right-3, .right-4, .right-5, .right-6, .right-7, .right-8, .right-9, .right-10, .right-11 {
+			margin-right: 0;
+		}
+	}
+
+	.flex.container.double {
+		width: 100%;
+
+		.col-1, .col-2, .col-3, .col-4, .col-5, .col-6 {
+			width: 50%;
+		}
+
+		.col-7, .col-8, .col-9, .col-10, .col-11, .col-12 {
+			width: 100%;
+		}
+	}
+
+	.flex.container {
+		.col-1, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-10, .col-11, .col-12 {
+			width: 100%;
+		}
+		.left-1, .left-2, .left-3, .left-4, .left-5, .left-6, .left-7, .left-8, .left-9, .left-10, .left-11 {
+			margin-left: 0;
+		}
+		.right-1, .right-2, .right-3, .right-4, .right-5, .right-6, .right-7, .right-8, .right-9, .right-10, .right-11 {
+			margin-right: 0;
+		}
+	}
+
+	.card {
+		margin: 8px 8px 0 8px;
+		overflow: hidden;
+
+		.padded {
+			padding: 14px;
+		}
+	}
+
+	.padded {
+		padding: 22px;
+	}
+}
+
+// for tablet
+@media only screen and (min-device-width: 768px) {
+	.container {
+		$width: 720px;
+		$col-width: $width/12;
+
+		width: $width;
+		.col-1 { width: $col-width; }
+		.col-2 { width: $col-width*2; }
+		.col-3 { width: $col-width*3; }
+		.col-4 { width: $col-width*4; }
+		.col-5 { width: $col-width*5; }
+		.col-6 { width: $col-width*6; }
+		.col-7 { width: $col-width*7; }
+		.col-8 { width: $col-width*8; }
+		.col-9 { width: $col-width*9; }
+		.col-10 { width: $col-width*10; }
+		.col-11 { width: $col-width*11; }
+		.col-12 { width: $width; }
+	}
+
+	.flex.container, .flex.container.double {
+		// 12 60px columns on tablets
+		$width: 720px;
+		$col-width: $width/12;
+
+		width: $width;
+		.col-1 { width: $col-width; }
+		.col-2 { width: $col-width*2; }
+		.col-3 { width: $col-width*3; }
+		.col-4 { width: $col-width*4; }
+		.col-5 { width: $col-width*5; }
+		.col-6 { width: $col-width*6; }
+		.col-7 { width: $col-width*7; }
+		.col-8 { width: $col-width*8; }
+		.col-9 { width: $col-width*9; }
+		.col-10 { width: $col-width*10; }
+		.col-11 { width: $col-width*11; }
+		.col-12 { width: $width; }
+
+		.left-1 { margin-left: $col-width; }
+		.left-2 { margin-left: $col-width*2; }
+		.left-3 { margin-left: $col-width*3; }
+		.left-4 { margin-left: $col-width*4; }
+		.left-5 { margin-left: $col-width*5; }
+		.left-6 { margin-left: $col-width*6; }
+		.left-7 { margin-left: $col-width*7; }
+		.left-8 { margin-left: $col-width*8; }
+		.left-9 { margin-left: $col-width*9; }
+		.left-10 { margin-left: $col-width*10; }
+		.left-11 { margin-left: $col-width*11; }
+
+		.right-1 { margin-right: $col-width; }
+		.right-2 { margin-right: $col-width*2; }
+		.right-3 { margin-right: $col-width*3; }
+		.right-4 { margin-right: $col-width*4; }
+		.right-5 { margin-right: $col-width*5; }
+		.right-6 { margin-right: $col-width*6; }
+		.right-7 { margin-right: $col-width*7; }
+		.right-8 { margin-right: $col-width*8; }
+		.right-9 { margin-right: $col-width*9; }
+		.right-10 { margin-right: $col-width*10; }
+		.right-11 { margin-right: $col-width*11; }
+	}
+
+	.card {
+		margin: 2px;
+
+		.padded {
+			padding: 14px;
+		}
+	}
+
+	.padded {
+		padding: 16px;
+	}
+}
+
+// for desktop
+@media (min-width: 960px) {
+	.container {
+		$width: 960px;
+		$col-width: $width/12;
+
+		width: $width;
+
+		.col-1 { width: $col-width; }
+		.col-2 { width: $col-width*2; }
+		.col-3 { width: $col-width*3; }
+		.col-4 { width: $col-width*4; }
+		.col-5 { width: $col-width*5; }
+		.col-6 { width: $col-width*6; }
+		.col-7 { width: $col-width*7; }
+		.col-8 { width: $col-width*8; }
+		.col-9 { width: $col-width*9; }
+		.col-10 { width: $col-width*10; }
+		.col-11 { width: $col-width*11; }
+		.col-12 { width: $width; }
+	}
+
+	.flex.container, .flex.container.double {
+		// 12 80px columns on tablets
+		$width: 960px;
+		$col-width: $width/12;
+
+		width: $width;
+		.col-1 { width: $col-width; }
+		.col-2 { width: $col-width*2; }
+		.col-3 { width: $col-width*3; }
+		.col-4 { width: $col-width*4; }
+		.col-5 { width: $col-width*5; }
+		.col-6 { width: $col-width*6; }
+		.col-7 { width: $col-width*7; }
+		.col-8 { width: $col-width*8; }
+		.col-9 { width: $col-width*9; }
+		.col-10 { width: $col-width*10; }
+		.col-11 { width: $col-width*11; }
+		.col-12 { width: $width; }
+
+		.left-1 { margin-left: $col-width; }
+		.left-2 { margin-left: $col-width*2; }
+		.left-3 { margin-left: $col-width*3; }
+		.left-4 { margin-left: $col-width*4; }
+		.left-5 { margin-left: $col-width*5; }
+		.left-6 { margin-left: $col-width*6; }
+		.left-7 { margin-left: $col-width*7; }
+		.left-8 { margin-left: $col-width*8; }
+		.left-9 { margin-left: $col-width*9; }
+		.left-10 { margin-left: $col-width*10; }
+		.left-11 { margin-left: $col-width*11; }
+
+		.right-1 { margin-right: $col-width; }
+		.right-2 { margin-right: $col-width*2; }
+		.right-3 { margin-right: $col-width*3; }
+		.right-4 { margin-right: $col-width*4; }
+		.right-5 { margin-right: $col-width*5; }
+		.right-6 { margin-right: $col-width*6; }
+		.right-7 { margin-right: $col-width*7; }
+		.right-8 { margin-right: $col-width*8; }
+		.right-9 { margin-right: $col-width*9; }
+		.right-10 { margin-right: $col-width*10; }
+		.right-11 { margin-right: $col-width*11; }
+
+	}
+}

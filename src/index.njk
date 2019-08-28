@@ -1,11 +1,133 @@
-<!doctype html><html><head>
-    <title>Page title</title>
-</head><body>
-    <ul>
-    {%- for mon in pokemon -%}
-    <li>
-        {{ mon.number }}: {{ mon.name }}
-    </li>
-    {%- endfor -%}
-    </ul>
-</body></html>
+<!doctype html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+    <title>Pokémon Icons</title>
+    <meta name="description" content="High quality Pokémon fan art" />
+
+    <!-- Twitter summary card -->
+    <meta property="twitter:creator:id" content="3426053692" />
+    <meta property="twitter:title" content="Pokémon Icons" />
+    <meta property="twitter:description" content="High quality Pokémon fan art" />
+
+    <!-- Facebook OpenGraph -->
+    <meta property="fb:app_id" content="551479148334070" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Pokémon Icons" />
+    <meta property="og:description" content="High quality Pokémon fan art" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link href="/css/style.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Barlow:300,500,700|Noto+Serif:400,700" rel="stylesheet">
+</head>
+<body>
+    <nav id="header">
+        <div class="flex container topbar">
+<!--
+            <div class="col-4">
+                <div class="padded-lr">
+                    <div id="logo">
+                        <a href="/">The Artificial</a>
+                    </div>
+                </div>
+            </div>
+            <div id="nav-primary" class="col-8">
+                <div class="padded-lr">
+                    <ul>
+                        <li><a href="/work/" class="">work</a></li>
+                        <li><a href="/laboratory/" class="">laboratory</a></li>
+                        <li><a href="/people/" class="">alumni</a></li>
+                        <li><a href="/blog/" class="">archive</a></li>
+                    </ul>
+                </div>
+            </div>
+-->
+        </div>
+    </nav>
+
+	<div class="underheader"></div>
+
+    <section id="content">
+        <!-- page content -->
+
+        <script src="/pokemonicons/js/svg4everybody.js"></script>
+        <script>
+            if (document.readyState != 'loading'){
+                svg4everybody();
+            } else {
+                document.addEventListener('DOMContentLoaded', svg4everybody);
+            }
+        </script>
+
+        <div class="pokemon-icons-content">
+
+            <div class="bleed poke-background">
+                <div class="flex container pokeball">
+                <div class="col-8 left-2 right-2 center introduction">
+                    <h1 class="poke-title">Pokémon icons</h1>
+                    <div class="poke-description">Frustrated that we hadn’t yet caught all of the Pokémon in Pokémon Go, we decided to illustrate those cute little monsters instead.</div>
+                </div>
+                <div class="col-12 center button">
+                    <a class="download transition" href="#download">Catch 'em below</a>
+                </div>
+                </div>
+            </div>
+
+            <div id="alltheicons" class="flex container">
+
+                <div class="col-8 left-2 right-2 center">
+                <h2 class="small-subtitle">{{ pokemon | length }} pixel-perfect vector Pokémon</h2>
+                </div>
+
+                {%- for icon in pokemon -%}
+                <div class="col-2 center">
+                    <figure>
+                    <svg>
+                        <use xlink:href="/assets/icon-symbols.svg#{{ icon.number }}-{{ icon.name }}"></use>
+                    </svg>
+                    <figcaption>
+                        <div class="number">{{ icon.number }}</div>
+                        <div class="name">{{ icon.name }}</div>
+                    </figcaption>
+                    </figure>
+                </div>
+                {%- endfor -%}
+
+            </div>
+
+            <div class="bleed poke-background top" id="download">
+                <div class="flex container">
+                <div class="col-8 left-2 right-2 center conclusion">
+                    <p>If you want to use or remix our fan art, follow the button below to get source files.</p>
+                </div>
+                <div class="col-12 center button">
+                    <a class="download transition" href="downloads/pokemon-icons.zip">Download files</a>
+                </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <script>
+        window.fbAsyncInit = function() {
+            FB.init({
+                appId      : '1943821238982155',
+                xfbml      : true,
+                version    : 'v2.12'
+            });
+            FB.AppEvents.logPageView();
+        };
+        (function(d, s, id){
+                var js, fjs = d.getElementsByTagName(s)[0];
+                if (d.getElementById(id)) {return;}
+                js = d.createElement(s); js.id = id;
+                js.src = "https://connect.facebook.net/en_US/sdk.js";
+                fjs.parentNode.insertBefore(js, fjs);
+            }(document, 'script', 'facebook-jssdk'));
+    </script>
+
+</body>
+</html>
