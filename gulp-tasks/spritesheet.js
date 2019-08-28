@@ -1,4 +1,3 @@
-const project = require('./_project.js');
 const gulp    = require('gulp');
 const svgSprite	= require('gulp-svg-sprite');
 
@@ -10,7 +9,7 @@ config					= {
     mode				: {
         symbol			: {
             dest        : '', // don't nest
-            sprite      : 'all-icon-symbols.svg'
+            sprite      : 'icon-symbols.svg'
         }
     },
     shape               : {
@@ -21,10 +20,10 @@ config					= {
 };
 
 gulp.task('spritesheet', function() {
-  return gulp.src('**/*.svg', {cwd: project.buildSrc + '/_icons/SVG'})
+  return gulp.src('**/*.svg', {cwd: '_icons/SVG'})
       .pipe(svgSprite(config))
       .on('error', function(error) {
         console.log('oh no!');
       })
-      .pipe(gulp.dest('assets'));
+      .pipe(gulp.dest('_prepared_assets'));
 });

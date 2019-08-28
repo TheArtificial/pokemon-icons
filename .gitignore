@@ -1,4 +1,4 @@
 /node_modules
 /_site
-/assets
+/_prepared_assets
 .DS_Store

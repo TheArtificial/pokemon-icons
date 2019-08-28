@@ -1,4 +1,3 @@
-const project = require('./_project.js');
 const gulp    = require('gulp');
 const shell = require('gulp-shell');
 

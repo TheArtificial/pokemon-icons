@@ -1,4 +1,3 @@
-const project = require('./_project.js');
 const gulp    = require('gulp');
 const svg2png   = require('gulp-svg2png');
 
@@ -7,7 +6,7 @@ const svg2png   = require('gulp-svg2png');
 */
 
 gulp.task('pngs', function() {
-  return gulp.src('**/*.svg', {cwd: project.buildSrc + '/_icons'})
+  return gulp.src('**/*.svg', {cwd: '_icons/SVG'})
     .pipe(svg2png({width: 32, height: 32}, true, 1))
-    .pipe(gulp.dest('assets/pngs'));
+      .pipe(gulp.dest('_prepared_assets/pngs'));
 });

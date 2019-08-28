@@ -1,14 +1,14 @@
 module.exports = function(eleventyConfig) {
   eleventyConfig.setDataDeepMerge(true);
 
-  eleventyConfig.addPassthroughCopy("img");
-  eleventyConfig.addPassthroughCopy("css");
+  eleventyConfig.addPassthroughCopy({"_prepared_assets": "assets"});
+
+  eleventyConfig.setUseGitIgnore(false);
 
   return {
     templateFormats: [
       "js",
-      "njk",
-      "svg" // to copy the pokeball background
+      "njk"
     ],
 
     pathPrefix: "/",
