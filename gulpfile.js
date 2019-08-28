@@ -11,7 +11,8 @@ require('require-dir')('./gulp-tasks');
 gulp.task('assets', gulp.parallel(
   // PNG generation is way too heavy
   // 'pngs',
-  'spritesheet'
+  'spritesheet',
+  'download-pkg'
 ));
 
 /*
