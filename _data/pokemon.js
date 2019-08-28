@@ -3,10 +3,9 @@
 // This file is a script that makes the YAML accessible to Eleventy for rendering
 // It can be deprecated when https://github.com/11ty/eleventy/issues/630 is resolved
 
+const yaml = require('js-yaml');
+const fs   = require('fs');
+
 module.exports = function() {
-    return [
-        {number: 001, name: 'bulbasaur'},
-        {number: 001, name: 'bulbasaur-shiny'},
-        {number: 137, name: 'porygon'}
-    ];
+    return yaml.safeLoad(fs.readFileSync('_data/pokemon.yml', 'utf8'));
   };
