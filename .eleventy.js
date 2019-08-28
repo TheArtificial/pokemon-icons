@@ -15,13 +15,13 @@ module.exports = function(eleventyConfig) {
 
     // markdownTemplateEngine: "njk",
     // htmlTemplateEngine: "njk",
-    // dataTemplateEngine: "njk",
+    // dataTemplateEngine: "njk"
 
     passthroughFileCopy: true,
     dir: {
       input: "src",
       includes: "_includes",
-      data: "_data",
+      data: "../_data",
       output: "_site"
     }
   };
