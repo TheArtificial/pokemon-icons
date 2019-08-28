@@ -2,6 +2,7 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.setDataDeepMerge(true);
 
   eleventyConfig.addPassthroughCopy({"_prepared_assets": "assets"});
+  eleventyConfig.addPassthroughCopy({"src/assets": "assets"});
 
   eleventyConfig.setUseGitIgnore(false);
 

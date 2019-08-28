@@ -2,6 +2,11 @@
 @import "_artificial-grid.scss";
 @import "_artificial-colors.scss";
 @import "_site-base.scss";
+@import "_site-typography.scss";
+
+figure {
+	margin: 0;
+}
 
 .pokemon-icons-content {
 
@@ -57,7 +62,7 @@
 	}
 
 	.pokeball {
-		background-image: url("../images/pokeball.svg");
+		background-image: url("../assets/pokeball.svg");
 		background-position: bottom center;
 		background-size: cover;
 	}
