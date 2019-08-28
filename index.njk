@@ -1,0 +1,11 @@
+<!doctype html><html><head>
+    <title>Page title</title>
+</head><body>
+    <ul>
+    {%- for mon in pokemon -%}
+    <li>
+        {{ mon.number }}: {{ mon.name }}
+    </li>
+    {%- endfor -%}
+    </ul>
+</body></html>
