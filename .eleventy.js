@@ -6,19 +6,20 @@ module.exports = function(eleventyConfig) {
 
   return {
     templateFormats: [
-      "md",
+      "js",
       "njk",
-      "html"
+      "svg" // to copy the pokeball background
     ],
 
     pathPrefix: "/",
 
-    markdownTemplateEngine: "njk",
-    htmlTemplateEngine: "njk",
-    dataTemplateEngine: "njk",
+    // markdownTemplateEngine: "njk",
+    // htmlTemplateEngine: "njk",
+    // dataTemplateEngine: "njk",
+
     passthroughFileCopy: true,
     dir: {
-      input: ".",
+      input: "src",
       includes: "_includes",
       data: "_data",
       output: "_site"
