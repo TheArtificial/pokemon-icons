@@ -11,7 +11,9 @@
   "license": "ISC",
   "devDependencies": {
     "@11ty/eleventy": "^0.9.0",
+    "del": "^5.1.0",
     "gulp": "^4.0.2",
+    "gulp-git": "^2.9.0",
     "gulp-shell": "^0.7.1",
     "gulp-svg-sprite": "^1.5.0",
     "gulp-svg2png": "^2.0.2",
