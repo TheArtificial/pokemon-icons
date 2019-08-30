@@ -7,10 +7,8 @@ const del       = require('del');
 */
 const localDir  = '../pokemon-icons-gh-pages';
 
-// const email = process.env.GH_EMAIL;
-const email = 'hans@gerwitz.com';
-// const token = process.env.GH_TOKEN;
-const token = 'b640e8d93d7008ecce7e0d1cdfbddf85ea5fd6a1';
+const email = process.env.GH_EMAIL;
+const token = process.env.GH_TOKEN;
 
 var message = 'Publishing';
 if (process.env.TRAVIS_BUILD_NUMBER) {
@@ -20,17 +18,12 @@ if (process.env.TRAVIS_BUILD_NUMBER) {
 // Clone the gh-pages branch (no need to checkout)
 gulp.task('pub-clone', function(cb) {
     git.clone(
-        'https://github.com/TheArtificial/pokemon-icons',
+        `https://${token}@github.com/TheArtificial/pokemon-icons`,
         {args: `-b gh-pages --single-branch ${localDir}`},
         function(err) {
-            if (err) { console.log('Uh oh', err); }
+            if (err) { console.log('Error cloning', err); }
         }
     );
-    cb();
-});
-
-// Delete everything in the local repo
-gulp.task('pub-clean', function(cb) {
     cb();
 });
 
@@ -52,7 +45,7 @@ gulp.task('pub-stage', function(cb) {
 // Add everything and commit
 gulp.task('pub-commit', function(cb) {
     gulp.src('**/*', {cwd: localDir})
-        .pipe(git.commit(message,  {cwd: localDir}));
+        .pipe(git.commit(message,  {cwd: localDir, author: email}));
     cb();
 });
 
