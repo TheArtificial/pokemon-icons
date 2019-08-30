@@ -23,7 +23,7 @@ gulp.task('build', gulp.series(
   'generate'
 ));
 
-gulp.tast('deploy', gulp.series(
+gulp.task('deploy', gulp.series(
   'build',
   'publish'
 ));
