@@ -1,11 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- Generator: Adobe Illustrator 23.0.2, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!-- Generator: Adobe Illustrator 23.0.6, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
 <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="32px"
 	 height="32px" viewBox="0 0 32 32" enable-background="new 0 0 32 32" xml:space="preserve">
-<g id="labels">
-	<g>
-	</g>
-</g>
 <g id="icons">
 	<g>
 		<path fill="#F7C845" d="M21.117,28.136c0.095-0.172,0.195-0.357,0.306-0.558c1.676-3.048-0.825-8.453-0.93-8.578H16v11
@@ -88,5 +84,7 @@
 			<path fill="#2B3332" d="M16.96,16.206C17.046,16.13,16.985,16,16.862,16H16v1c0.035,0,0.07-0.012,0.097-0.035L16.96,16.206z"/>
 		</g>
 	</g>
+</g>
+<g id="labels">
 </g>
 </svg>

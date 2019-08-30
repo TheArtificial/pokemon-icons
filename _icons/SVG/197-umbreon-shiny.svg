@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- Generator: Adobe Illustrator 23.0.2, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!-- Generator: Adobe Illustrator 23.0.6, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
 <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="32px"
 	 height="32px" viewBox="0 0 32 32" enable-background="new 0 0 32 32" xml:space="preserve">
+<g id="labels">
+	<g>
+	</g>
+</g>
 <g id="icons">
 	<g>
 		<g>
@@ -84,22 +88,22 @@
 			c-0.033,0.078-0.217,0.497-0.302,0.691c-0.317-0.111-0.588-0.358-0.778-0.728C20.184,26.406,20.097,25.883,20.151,25.348z"/>
 		<g>
 			<defs>
-				<path id="SVGID_1_" d="M11.25,8.75C11,10,11.5,11.5,12.5,11.5c0.5,0,1.5-0.331,1.5-0.75C14,9,11.348,8.26,11.25,8.75z"/>
+				<path id="SVGID_7_" d="M11.25,8.75C11,10,11.5,11.5,12.5,11.5c0.5,0,1.5-0.331,1.5-0.75C14,9,11.348,8.26,11.25,8.75z"/>
 			</defs>
-			<use xlink:href="#SVGID_1_"  overflow="visible" fill="#FFD96C"/>
+			<use xlink:href="#SVGID_7_"  overflow="visible" fill="#FFD96C"/>
 			<clipPath id="SVGID_2_">
-				<use xlink:href="#SVGID_1_"  overflow="visible"/>
+				<use xlink:href="#SVGID_7_"  overflow="visible"/>
 			</clipPath>
 			<ellipse clip-path="url(#SVGID_2_)" fill="#373F3F" cx="12.625" cy="9.5" rx="0.375" ry="1"/>
 		</g>
 		<g>
 			<defs>
-				<path id="SVGID_3_" d="M20.76,8.75c0.25,1.25-0.25,2.75-1.25,2.75c-0.5,0-1.5-0.331-1.5-0.75C18.01,9,20.662,8.26,20.76,8.75z"
+				<path id="SVGID_9_" d="M20.76,8.75c0.25,1.25-0.25,2.75-1.25,2.75c-0.5,0-1.5-0.331-1.5-0.75C18.01,9,20.662,8.26,20.76,8.75z"
 					/>
 			</defs>
-			<use xlink:href="#SVGID_3_"  overflow="visible" fill="#FFD04D"/>
+			<use xlink:href="#SVGID_9_"  overflow="visible" fill="#FFD04D"/>
 			<clipPath id="SVGID_4_">
-				<use xlink:href="#SVGID_3_"  overflow="visible"/>
+				<use xlink:href="#SVGID_9_"  overflow="visible"/>
 			</clipPath>
 			<ellipse clip-path="url(#SVGID_4_)" fill="#2B3332" cx="19.385" cy="9.5" rx="0.375" ry="1"/>
 		</g>

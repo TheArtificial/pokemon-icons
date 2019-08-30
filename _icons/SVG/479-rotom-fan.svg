@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- Generator: Adobe Illustrator 23.0.2, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!-- Generator: Adobe Illustrator 23.0.6, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
 <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="32px"
 	 height="32px" viewBox="0 0 32 32" enable-background="new 0 0 32 32" xml:space="preserve">
 <g id="labels">
@@ -78,10 +78,6 @@
 				C19.441,28.487,20.704,27.848,21.598,27z"/>
 			<path fill="#EF8C48" d="M10.402,27c0.894,0.848,2.157,1.486,3.619,1.794C14.014,28.863,14,28.929,14,29c0,1.105,0.895,2,2,2
 				v-3.25C13.85,27.75,11.701,27.5,10.402,27z"/>
-		</g>
-		<g>
-			<polygon fill="#F79654" points="15.03,9.775 16,10.175 16,9.174 			"/>
-			<path fill="#EF8C48" d="M17.96,7.961L16,9.174v1.001l1.299,0.536c0.332,0.137,0.695-0.11,0.691-0.469L17.96,7.961z"/>
 		</g>
 		<path fill="#2B3332" d="M14.081,3h3.839c0.839,0,1.305,0.97,0.781,1.625l-1.919,2.399c-0.4,0.5-1.161,0.5-1.562,0L13.3,4.625
 			C12.776,3.97,13.242,3,14.081,3z"/>

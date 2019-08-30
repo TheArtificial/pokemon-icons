@@ -1,10 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- Generator: Adobe Illustrator 23.0.2, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!-- Generator: Adobe Illustrator 23.0.6, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
 <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="32px"
 	 height="32px" viewBox="0 0 32 32" enable-background="new 0 0 32 32" xml:space="preserve">
 <g id="icons">
-</g>
-<g id="labels">
 	<g>
 		<polygon fill="#F7D684" points="19,23 20,30.5 23,31 23,32 18,32 18,31 19,30.5 17,23 		"/>
 		<polygon fill="#FAE09F" points="13,23 12,30.5 9,31 9,32 14,32 14,31 13,30.5 15,23 		"/>
@@ -167,5 +165,7 @@
 			<path fill="#2B3332" d="M26.25,8L26.25,8c0.138,0,0.25-0.112,0.25-0.25V6.831L26,7.161V7.75C26,7.888,26.112,8,26.25,8z"/>
 		</g>
 	</g>
+</g>
+<g id="labels">
 </g>
 </svg>

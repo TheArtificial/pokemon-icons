@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- Generator: Adobe Illustrator 23.0.2, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!-- Generator: Adobe Illustrator 23.0.6, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
 <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="32px"
 	 height="32px" viewBox="0 0 32 32" enable-background="new 0 0 32 32" xml:space="preserve">
 <g id="labels">
@@ -27,8 +27,8 @@
 			<rect x="9.781" y="26" fill="#9DA5A4" width="3" height="6"/>
 			<path fill="#9DA5A4" d="M13.398,32H9.164c-0.389,0-0.629-0.424-0.429-0.757L9.781,29.5h3l1.046,1.743
 				C14.027,31.576,13.787,32,13.398,32z"/>
-			<path fill="#E3E5E5" d="M9.531,32c0-0.414,0.336-0.75,0.75-0.75s0.75,0.336,0.75,0.75H9.531z"/>
-			<path fill="#E3E5E5" d="M11.531,32c0-0.414,0.336-0.75,0.75-0.75s0.75,0.336,0.75,0.75H11.531z"/>
+			<path fill="#E3E5E5" d="M9.531,32c0-0.414,0.336-0.75,0.75-0.75c0.414,0,0.75,0.336,0.75,0.75H9.531z"/>
+			<path fill="#E3E5E5" d="M11.531,32c0-0.414,0.336-0.75,0.75-0.75c0.414,0,0.75,0.336,0.75,0.75H11.531z"/>
 		</g>
 		<g>
 			<rect x="19.219" y="26" fill="#909997" width="3" height="6"/>
