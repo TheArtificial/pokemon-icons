@@ -2,6 +2,5 @@ language: node_js
 node_js:
   - 7
 before_script:
-  - npm install
   - npm install -g gulp-cli
-script: gulp deploy
+script: gulp build
