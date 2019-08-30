@@ -23,9 +23,4 @@ gulp.task('build', gulp.series(
   'generate'
 ));
 
-gulp.task('deploy', gulp.series(
-  'build',
-  'publish'
-));
-
 gulp.task('default', gulp.series('build'));

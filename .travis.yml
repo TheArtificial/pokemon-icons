@@ -3,4 +3,7 @@ node_js:
   - 12
 before_script:
   - npm install -g gulp-cli
-script: gulp deploy
+script:
+  - gulp build
+after_script:
+  - gulp publish

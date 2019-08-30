@@ -22,9 +22,9 @@ gulp.task('pub-clone', function(cb) {
         {args: `-b gh-pages --single-branch ${localDir}`},
         function(err) {
             if (err) { console.log('Error cloning', err); }
+            cb();
         }
     );
-    cb();
 });
 
 // Copy our build into the repo
@@ -51,8 +51,7 @@ gulp.task('pub-commit', function(cb) {
 
 // Push to GitHub
 gulp.task('pub-push', function(cb) {
-    git.push('origin', 'gh-pages', {cwd: localDir});
-    cb();
+    git.push('origin', 'gh-pages', {cwd: localDir}, cb);
 });
 
 // Do all the things
