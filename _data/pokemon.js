@@ -9,9 +9,15 @@ module.exports = function() {
     var parsed = null;
     if (parsed = filter.exec(filename)) {
       var number = parsed[1];
-      var name = parsed[2].replace(/\-/g, ' ');
-       var pokemon = { number: parsed[1], name: name[0].toUpperCase() + name.substring(1) }
-       filtered.push(pokemon);
+      var slug = parsed[2];
+      var name = slug;
+      name = name.replace(/\-/g, ' ');
+      var pokemon = {
+        number: number,
+        slug: slug,
+        name: name[0].toUpperCase() + name.substring(1)
+      }
+      filtered.push(pokemon);
     }
     return filtered;
   }, []);
