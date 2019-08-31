@@ -45,13 +45,16 @@ gulp.task('pub-stage', function(cb) {
 // Add everything and commit
 gulp.task('pub-commit', function(cb) {
     gulp.src('**/*', {cwd: localDir})
-        .pipe(git.commit(message,  {cwd: localDir, author: email}));
-    cb();
+        .pipe(git.commit(message,  {cwd: localDir, author: email}, cb()));
+    // cb();
 });
 
 // Push to GitHub
 gulp.task('pub-push', function(cb) {
-    git.push('origin', 'gh-pages', {cwd: localDir}, cb);
+    git.push('origin', 'gh-pages', {cwd: localDir}, function (err) {
+        if (err) throw err;
+        cb();
+      });
 });
 
 // Do all the things
