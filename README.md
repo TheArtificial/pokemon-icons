@@ -5,7 +5,6 @@ This is a collection of fan art representing Pokémon. It strives for consistenc
 ## Contributing
 
 - Fork this repository
-- Add the new pokemon with number and unique name in `_data/pokemon.yml`
 - Place 4 files matching that number and name under the `_icons` directory:
   1. A 32 x 32 SVG in `_icons/SVG`
   2. A 32 x 32 PNG in `_icons/PNG/1x`

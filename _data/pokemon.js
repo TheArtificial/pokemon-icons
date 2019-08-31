@@ -1,11 +1,19 @@
-// If you want to edit the data, you should be in the YAML file (pokemon.yml)
-//
-// This file is a script that makes the YAML accessible to Eleventy for rendering
-// It can be deprecated when https://github.com/11ty/eleventy/issues/630 is resolved
+// This file is a script that makes the filenames of SVG icons accessible to Eleventy for rendering
 
-const yaml = require('js-yaml');
 const fs   = require('fs');
 
 module.exports = function() {
-    return yaml.safeLoad(fs.readFileSync('_data/pokemon.yml', 'utf8'));
-  };
+  var filter = /(\d\d\d)\-(.*)\.svg/;
+  var filenames = fs.readdirSync('_icons/SVG/', {withFileTypes: false});
+  var filtered = filenames.reduce(function(filtered, filename) {
+    var parsed = null;
+    if (parsed = filter.exec(filename)) {
+       var pokemon = { number: parsed[1], name: parsed[2] }
+       filtered.push(pokemon);
+       console.log(filename, pokemon);
+    }
+    return filtered;
+  }, []);
+
+  return filtered;
+};
