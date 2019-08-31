@@ -8,9 +8,10 @@ module.exports = function() {
   var filtered = filenames.reduce(function(filtered, filename) {
     var parsed = null;
     if (parsed = filter.exec(filename)) {
-       var pokemon = { number: parsed[1], name: parsed[2] }
+      var number = parsed[1];
+      var name = parsed[2].replace(/\-/g, ' ');
+       var pokemon = { number: parsed[1], name: name[0].toUpperCase() + name.substring(1) }
        filtered.push(pokemon);
-       console.log(filename, pokemon);
     }
     return filtered;
   }, []);
