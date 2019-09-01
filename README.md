@@ -4,6 +4,8 @@ This is a collection of fan art representing Pokémon. It strives for consistenc
 
 ## Contributing
 
+Each icon is designed as vectors but snapped to a 32 x 32 grid. Style and color approach should be easy to discern from the existing art.
+
 - Fork this repository
 - Place 4 files matching that number and name under the `_icons` directory:
   1. A 32 x 32 SVG in `_icons/SVG`
