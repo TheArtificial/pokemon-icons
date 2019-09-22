@@ -4,6 +4,8 @@ This is a collection of fan art representing Pokémon. It strives for consistenc
 
 ## Contributing
 
+There are Adobe Illustrator working files in `_working`, feel free to use them as a starting point, and to add your files to this directory. Trying to version control them would be complicated, so please don't overwrite another artist's working file.
+
 Each icon is designed as vectors but snapped to a 32 x 32 grid. Style should be easy to discern from the existing art and color from the swatch file in the `_working` folder.
 
 - Fork this repository
