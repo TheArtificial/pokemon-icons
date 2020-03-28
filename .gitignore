@@ -2,3 +2,4 @@
 /_site
 /_prepared_assets
 .DS_Store
+.env

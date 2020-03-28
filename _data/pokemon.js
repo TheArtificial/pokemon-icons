@@ -22,5 +22,6 @@ module.exports = function() {
     return filtered;
   }, []);
 
+  console.log(filtered.length + ' icon files indexed.')
   return filtered;
 };

@@ -3,7 +3,7 @@ const git       = require('gulp-git');
 const del       = require('del');
 
 /*
- Commit site to gh-pages branch
+Commit site to gh-pages branch
 */
 const localDir  = '../pokemon-icons-gh-pages';
 
@@ -22,6 +22,7 @@ gulp.task('pub-clone', function(cb) {
         {args: `-b gh-pages --single-branch ${localDir}`},
         function(err) {
             if (err) { console.log('Error cloning', err); }
+            console.log('Finished cloning');
             cb();
         }
     );
@@ -39,6 +40,7 @@ gulp.task('pub-stage', function(cb) {
     gulp.src('_site/**/*', {base: '_site'})
         .pipe(gulp.dest(localDir))
         .pipe(git.add({cwd: localDir}));
+    console.log('Finished staging');
     cb();
 });
 
@@ -46,13 +48,15 @@ gulp.task('pub-stage', function(cb) {
 gulp.task('pub-commit', function(cb) {
     gulp.src('**/*', {cwd: localDir})
         .pipe(git.commit(message,  {cwd: localDir, author: email}, cb()));
-    // cb();
+    console.log('Finished commiting');
+    cb();
 });
 
 // Push to GitHub
 gulp.task('pub-push', function(cb) {
     git.push('origin', 'gh-pages', {cwd: localDir}, function (err) {
         if (err) throw err;
+        console.log('Pushed to origin:gh-pages');
         cb();
       });
 });
