@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 23.0.6, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="32px"
+	 height="32px" viewBox="0 0 32 32" enable-background="new 0 0 32 32" xml:space="preserve">
+<g id="labels">
+	<g>
+	</g>
+</g>
+<g id="icons">
+	<g>
+		<g>
+			<path fill="#FFFFFF" d="M16,15c-4.142,0-7.5,3.358-7.5,7.5S11.858,30,16,30V15z"/>
+			<path fill="#F7F7F7" d="M23.5,22.5c0-4.142-3.358-7.5-7.5-7.5v15C20.142,30,23.5,26.642,23.5,22.5z"/>
+			<path fill="#373F3F" d="M16,20c-1.381,0-2.5,1.119-2.5,2.5c0,1.381,1.119,2.5,2.5,2.5V20z"/>
+			<path fill="#2B3332" d="M18.5,22.5c0-1.381-1.119-2.5-2.5-2.5v5C17.381,25,18.5,23.881,18.5,22.5z"/>
+			<circle fill="#FFFFFF" cx="15.5" cy="22" r="1"/>
+		</g>
+		<path fill="#3980A8" d="M5.5,0C4.672,0,4,0.671,4,1.5S4.672,3,5.5,3h9v10.13c-4.526,0.723-8,4.643-8,9.37
+			c0,5.238,4.262,9.5,9.5,9.5v-3c-3.584,0-6.5-2.916-6.5-6.5S12.416,16,16,16V0H5.5z"/>
+		<path fill="#377AA0" d="M26.5,0H16v16c3.584,0,6.5,2.916,6.5,6.5S19.584,29,16,29v3c5.238,0,9.5-4.262,9.5-9.5
+			c0-4.727-3.474-8.647-8-9.37V3h9C27.328,3,28,2.329,28,1.5S27.328,0,26.5,0z"/>
+	</g>
+</g>
+</svg>
