@@ -22,12 +22,13 @@
     "gulp-shell": "^0.7.1",
     "gulp-svg-sprite": "^1.5.0",
     "gulp-svg2png": "^2.0.2",
+    "gulp-svgo": "^2.2.1",
     "gulp-zip": "^5.0.0",
     "js-yaml": "^3.13.1",
     "require-dir": "^1.2.0",
     "sass": "^1.22.10"
   },
   "dependencies": {
-    "npm": "^6.11.2"
+    "npm": "^6.14.4"
   }
 }

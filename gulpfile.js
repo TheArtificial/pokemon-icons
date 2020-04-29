@@ -19,6 +19,7 @@ gulp.task('assets', gulp.parallel(
   Build the site
 */
 gulp.task('build', gulp.series(
+  'optimize',
   'assets', // this goes first because it writes to /assets
   'generate'
 ));
